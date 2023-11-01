@@ -109,7 +109,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Categories/id?id={id}",
-      "UpstreamHttpMethod": [ "GET"  ]
+      "UpstreamHttpMethod": [ "GET" ]
     },
     //CreateCategory
     {
@@ -123,7 +123,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Categories/Create",
-      "UpstreamHttpMethod": [  "POST" ]
+      "UpstreamHttpMethod": [ "POST" ]
     },
     //UpdateCategory
     {
@@ -151,7 +151,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Categories/Delete",
-      "UpstreamHttpMethod": [  "DELETE" ]
+      "UpstreamHttpMethod": [ "DELETE" ]
     },
     //Movie
     //GetMovieList
@@ -166,6 +166,34 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Movies",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    //GetMovieListByCategoryId
+    {
+      "DownstreamPathTemplate": "/api/Movies/categoryId?categoryId={categoryId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7113
+        }
+
+      ],
+      "UpstreamPathTemplate": "/apigateway/Movies/categoryId?categoryId={categoryId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    //GetMovieByIdForUpdate
+    {
+      "DownstreamPathTemplate": "/api/Movies/update/id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7113
+        }
+
+      ],
+      "UpstreamPathTemplate": "/apigateway/Movies/update/id?id={id}",
       "UpstreamHttpMethod": [ "GET" ]
     },
     //GetMovieById
@@ -236,7 +264,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Movies/Delete",
-      "UpstreamHttpMethod": [  "DELETE" ]
+      "UpstreamHttpMethod": [ "DELETE" ]
     },
     //Search
     {
@@ -293,7 +321,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Episodes/id?id={id}",
-      "UpstreamHttpMethod": [ "GET"  ]
+      "UpstreamHttpMethod": [ "GET" ]
     },
     //CreateEpisode
     {
@@ -321,7 +349,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Episodes/Update",
-      "UpstreamHttpMethod": [  "PUT" ]
+      "UpstreamHttpMethod": [ "PUT" ]
     },
     //DeleteEpisode
     {
@@ -335,7 +363,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Episodes/Delete",
-      "UpstreamHttpMethod": [  "DELETE" ]
+      "UpstreamHttpMethod": [ "DELETE" ]
     },
     //Comment
     //GetCommentList
@@ -392,7 +420,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Comment/Update",
-      "UpstreamHttpMethod": [  "PUT" ]
+      "UpstreamHttpMethod": [ "PUT" ]
     },
     //DeleteComment
     {
