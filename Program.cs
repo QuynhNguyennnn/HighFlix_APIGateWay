@@ -2,6 +2,7 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 // Add services to the container.
 
@@ -11,6 +12,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Configuration.AddJsonFile("Gateway.json", optional: false, reloadOnChange: true);
 builder.Services.AddOcelot(builder.Configuration);
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:3000/").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                      });
+});
+
 
 var app = builder.Build();
 
@@ -28,5 +38,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseOcelot().Wait();
+
+app.UseCors(MyAllowSpecificOrigins);
+
 
 app.Run();
