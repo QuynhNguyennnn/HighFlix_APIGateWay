@@ -250,7 +250,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Movies/Search",
-      "UpstreamHttpMethod": [ "GET", "PUT", "POST", "DELETE" ]
+      "UpstreamHttpMethod": [ "GET" ]
     },
     //Episode
     //GetEpisodeList
@@ -265,7 +265,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Episodes",
-      "UpstreamHttpMethod": [ "GET", "PUT", "POST", "DELETE" ]
+      "UpstreamHttpMethod": [ "GET" ]
     },
     //GetEpisodeByMovieId
     {
@@ -279,7 +279,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Episodes/movieId?movieId={movieId}",
-      "UpstreamHttpMethod": [ "GET", "PUT", "POST", "DELETE" ]
+      "UpstreamHttpMethod": [ "GET" ]
     },
     //GetEpisodeById
     {
@@ -293,7 +293,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Episodes/id?id={id}",
-      "UpstreamHttpMethod": [ "GET", "PUT", "POST", "DELETE" ]
+      "UpstreamHttpMethod": [ "GET"  ]
     },
     //CreateEpisode
     {
@@ -307,7 +307,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Episodes/Create",
-      "UpstreamHttpMethod": [ "GET", "PUT", "POST", "DELETE" ]
+      "UpstreamHttpMethod": [ "POST" ]
     },
     //UpdateEpisode
     {
@@ -321,7 +321,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Episodes/Update",
-      "UpstreamHttpMethod": [ "GET", "PUT", "POST", "DELETE" ]
+      "UpstreamHttpMethod": [  "PUT" ]
     },
     //DeleteEpisode
     {
