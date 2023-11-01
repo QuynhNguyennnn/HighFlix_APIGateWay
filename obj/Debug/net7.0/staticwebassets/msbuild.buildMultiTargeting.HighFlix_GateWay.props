@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HighFlix_GateWay.props" />
+</Project>
