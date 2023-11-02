@@ -297,7 +297,7 @@
     },
     //GetEpisodeByMovieId
     {
-      "DownstreamPathTemplate": "/api/Episodes/movieId?movieId={movieId}",
+      "DownstreamPathTemplate": "/api/Episodes/movie/movieId?movieId={movieId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -306,7 +306,7 @@
         }
 
       ],
-      "UpstreamPathTemplate": "/apigateway/Episodes/movieId?movieId={movieId}",
+      "UpstreamPathTemplate": "/apigateway/Episodes/movie/movieId?movieId={movieId}",
       "UpstreamHttpMethod": [ "GET" ]
     },
     //GetLastestEpisodesByMovieId
