@@ -396,7 +396,7 @@
     },
     //GetCommentByMovieId
     {
-      "DownstreamPathTemplate": "/api/Comment/comment/movieId?movieId={movieId}",
+      "DownstreamPathTemplate": "/api/Comment/movie/movieId?movieId={movieId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -405,7 +405,7 @@
         }
 
       ],
-      "UpstreamPathTemplate": "/apigateway/Comment/comment/movieId?movieId={movieId}",
+      "UpstreamPathTemplate": "/apigateway/Comment/movie/movieId?movieId={movieId}",
       "UpstreamHttpMethod": [ "GET" ]
     },
     //GetCommentById
