@@ -367,7 +367,7 @@
     },
     //DeleteEpisode
     {
-      "DownstreamPathTemplate": "/api/Episodes/Delete",
+      "DownstreamPathTemplate": "/api/Episodes/Delete?id={id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -376,8 +376,8 @@
         }
 
       ],
-      "UpstreamPathTemplate": "/apigateway/Episodes/Delete",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamPathTemplate": "/apigateway/Episodes/Delete?id={id}",
+      "UpstreamHttpMethod": [ "PUT" ]
     },
     //Comment
     //GetCommentList
