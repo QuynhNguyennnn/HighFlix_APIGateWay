@@ -151,7 +151,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Categories/Delete",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamHttpMethod": [ "PUT" ]
     },
     //Movie
     //GetMovieList
@@ -264,7 +264,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Movies/Delete",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamHttpMethod": [ "PUT" ]
     },
     //Search
     {
