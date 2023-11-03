@@ -151,7 +151,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Categories/Delete",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamHttpMethod": [ "PUT" ]
     },
     //Movie
     //GetMovieList
@@ -170,7 +170,7 @@
     },
     //GetMovieListByCategoryId
     {
-      "DownstreamPathTemplate": "/api/Movies/caterogy/categoryId?categoryId={categoryId}",
+      "DownstreamPathTemplate": "/api/Movies/category/{categoryId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -179,7 +179,7 @@
         }
 
       ],
-      "UpstreamPathTemplate": "/apigateway/Movies/caterogy/categoryId?categoryId={categoryId}",
+      "UpstreamPathTemplate": "/apigateway/Movies/category/{categoryId}",
       "UpstreamHttpMethod": [ "GET" ]
     },
     //GetMovieByIdForUpdate
@@ -311,7 +311,7 @@
     },
     //GetLastestEpisodesByMovieId
     {
-      "DownstreamPathTemplate": "/api/Episodes/lastestByMovie/movieId?movieId={movieId}",
+      "DownstreamPathTemplate": "/api/Episodes/latestByMovie/{movieId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -320,7 +320,7 @@
         }
 
       ],
-      "UpstreamPathTemplate": "/apigateway/Episodes/lastestByMovie/movieId?movieId={movieId}",
+      "UpstreamPathTemplate": "/apigateway/Episodes/latestByMovie/{movieId}",
       "UpstreamHttpMethod": [ "GET" ]
     },
     //GetEpisodeById
@@ -424,7 +424,7 @@
     },
     //CalculateAverageRating
     {
-      "DownstreamPathTemplate": "/api/Comment/averageRating/movieId?movieId={movieId}",
+      "DownstreamPathTemplate": "/api/Comment/averageRating/{movieId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -433,7 +433,7 @@
         }
 
       ],
-      "UpstreamPathTemplate": "/apigateway/Comment/averageRating/movieId?movieId={movieId}",
+      "UpstreamPathTemplate": "/apigateway/Comment/averageRating/{movieId}",
       "UpstreamHttpMethod": [ "GET" ]
     },
     //CreateComment
@@ -476,7 +476,7 @@
 
       ],
       "UpstreamPathTemplate": "/apigateway/Comment/Delete",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamHttpMethod": [ "PUT" ]
     },
     //Statistic
     //GetStatisticTheLastThreeDay
